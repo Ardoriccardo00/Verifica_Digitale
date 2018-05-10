@@ -59,15 +59,38 @@ namespace Verifica_Digitale
             + "Completamento: " + Convert.ToString(Completamento.PassaPunti) + ", "
             + "Totale: "
             + Totale;
-
-            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Text Documents |*.txt", ValidateNames = true }) {
-                if (sfd.ShowDialog() == DialogResult.OK) {
-                    using (StreamWriter sw = new StreamWriter(sfd.FileName)) {
-                        await sw.WriteLineAsync(txtText.Text);
-                        MessageBox.Show("Scrittura completata", "Messaggio", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
+            if (Login.Studente == "Colombo")
+            {
+                StreamWriter File = new StreamWriter("C://Users/Riccardo/Desktop/Risultati.txt");
+                File.Write("Scelta multipla: " + SceltaMultipla.PassaPuntiMultipla + ",");
+                File.Write(" Crocette: " + Crocette.PassaPuntiCrocette + ",");
+                File.Write(" Completamento: " + Completamento.PassaPunti + ",");
+                File.Write(" Totale: " + Totale);
+                File.Close();
             }
+            else
+            {
+                StreamWriter File = new StreamWriter("C://Users/Riccardo/Documents/Risultati.txt");
+                File.Write("Scelta multipla: " + SceltaMultipla.PassaPuntiMultipla + ",");
+                File.Write(" Crocette: " + Crocette.PassaPuntiCrocette + ",");
+                File.Write(" Completamento: " + Completamento.PassaPunti + ",");
+                File.Write(" Totale: " + Totale);
+                File.Close();
+
+            }
+
         }
     }
 }
+
+
+
+//Vecchio sistema di salvataggio
+//            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Text Documents |*.txt", ValidateNames = true }) {
+//                if (sfd.ShowDialog() == DialogResult.OK) {
+//                    using (StreamWriter sw = new StreamWriter(sfd.FileName)) {
+//                        await sw.WriteLineAsync(txtText.Text);
+//MessageBox.Show("Scrittura completata", "Messaggio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+//                    }
+//                }
+//            }

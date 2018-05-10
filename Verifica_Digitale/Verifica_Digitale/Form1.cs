@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,23 +38,36 @@ namespace Verifica_Digitale
             cc.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private async void button4_Click(object sender, EventArgs e)
         {
-                Totale = SceltaMultipla.PassaPuntiMultipla + Crocette.PassaPuntiCrocette + Completamento.PassaPunti;
+            Totale = SceltaMultipla.PassaPuntiMultipla + Crocette.PassaPuntiCrocette + Completamento.PassaPunti;
 
-                button1.Enabled = false;
-                button2.Enabled = false;
-                button3.Enabled = false;
-                button4.Enabled = false;
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button4.Enabled = false;
 
-                listBox1.Visible = true;
+            listBox1.Visible = true;
 
-                listBox1.Items.Add("Scelta multipla: " + Convert.ToString(SceltaMultipla.PassaPuntiMultipla));
-                listBox1.Items.Add("Crocette: " + Convert.ToString(Crocette.PassaPuntiCrocette));
-                listBox1.Items.Add("Completamento: " + Convert.ToString(Completamento.PassaPunti));
-                listBox1.Items.Add("");
-                listBox1.Items.Add(Totale);
-            
+            listBox1.Items.Add("Scelta multipla: " + Convert.ToString(SceltaMultipla.PassaPuntiMultipla));
+            listBox1.Items.Add("Crocette: " + Convert.ToString(Crocette.PassaPuntiCrocette));
+            listBox1.Items.Add("Completamento: " + Convert.ToString(Completamento.PassaPunti));
+            listBox1.Items.Add("");
+            listBox1.Items.Add(Totale);
+            txtText.Text = "Scelta multipla: " + Convert.ToString(SceltaMultipla.PassaPuntiMultipla) + ", "
+            + "Crocette: " + Convert.ToString(Crocette.PassaPuntiCrocette) + ", "
+            + "Completamento: " + Convert.ToString(Completamento.PassaPunti) + ", "
+            + "Totale: "
+            + Totale;
+
+            using (SaveFileDialog sfd = new SaveFileDialog() { Filter = "Text Documents |*.txt", ValidateNames = true }) {
+                if (sfd.ShowDialog() == DialogResult.OK) {
+                    using (StreamWriter sw = new StreamWriter(sfd.FileName)) {
+                        await sw.WriteLineAsync(txtText.Text);
+                        MessageBox.Show("Scrittura completata", "Messaggio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
         }
     }
 }

@@ -18,6 +18,7 @@ namespace Verifica_Digitale
         string Risposta4 = "sbagliata";
 
         int Punti;
+        public static int PassaPunti;
 
         public Completamento()
         {
@@ -39,6 +40,8 @@ namespace Verifica_Digitale
 
                  if (testo4.Text == Risposta4) { Punti = Punti + 1; }
             else if (testo4.Text != Risposta4) { Punti = Punti + 0; }
+
+            PassaPunti = Punti;
 
             MessageBox.Show(Convert.ToString(Punti));
         }

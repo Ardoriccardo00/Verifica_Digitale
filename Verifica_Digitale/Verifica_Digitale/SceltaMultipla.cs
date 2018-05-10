@@ -12,10 +12,12 @@ namespace Verifica_Digitale
 {
     public partial class SceltaMultipla : System.Windows.Forms.Form
     {
+        public static int PassaPuntiMultipla;
         int Punti1;
         int Punti2;
         int Punti3;
         int Punti4;
+        int PuntiTotali;
         string messaggio = "I punti sono: ";
         public SceltaMultipla()
         {
@@ -55,6 +57,9 @@ namespace Verifica_Digitale
             if      (checkBox15.Checked == true)  { Punti4 = Punti4 + 1; }
             else if (checkBox15.Checked == false) { Punti4 = Punti4 + 0; }
             if      (checkBox16.Checked == true)  { Punti4 = Punti4 + 0; }
+
+            PuntiTotali = Punti1 + Punti2 + Punti3 + Punti4;
+            PassaPuntiMultipla = PuntiTotali;
 
             MessageBox.Show(Convert.ToString(Punti1 + Punti2 + Punti3 + Punti4), messaggio);
 

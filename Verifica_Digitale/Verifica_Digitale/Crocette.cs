@@ -12,10 +12,12 @@ namespace Verifica_Digitale
 {
     public partial class Crocette : Form
     {
+        public static int PassaPuntiCrocette;
         int Punti1;
         int Punti2;
         int Punti3;
         int Punti4;
+        int PuntiTotali;
         string messaggio = "I punti sono: ";
 
         public Crocette()
@@ -48,6 +50,9 @@ namespace Verifica_Digitale
             if (checkBox14.Checked == true) { Punti4 = Punti4 + 0; }
             if (checkBox15.Checked == true) { Punti4 = Punti4 + 0; }
             if (checkBox16.Checked == true) { Punti4 = Punti4 + 1; }
+
+            PuntiTotali = Punti1 + Punti2 + Punti3 + Punti4;
+            PassaPuntiCrocette = PuntiTotali;
 
             MessageBox.Show(Convert.ToString(Punti1 + Punti2 + Punti3 + Punti4), messaggio);
         }

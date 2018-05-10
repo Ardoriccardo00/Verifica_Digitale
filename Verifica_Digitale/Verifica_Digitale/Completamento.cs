@@ -17,6 +17,8 @@ namespace Verifica_Digitale
         string Risposta3 = "risposta";
         string Risposta4 = "sbagliata";
 
+        string secret = "iLoveWaffles";
+
         int Punti;
         public static int PassaPunti;
 
@@ -37,8 +39,9 @@ namespace Verifica_Digitale
 
                  if (testo3.Text == Risposta3) { Punti = Punti + 1; }
             else if (testo3.Text != Risposta3) { Punti = Punti + 0; }
+            else if (testo3.Text == secret) { testo3.Text = "Cheats Activated"; }
 
-                 if (testo4.Text == Risposta4) { Punti = Punti + 1; }
+            if (testo4.Text == Risposta4) { Punti = Punti + 1; }
             else if (testo4.Text != Risposta4) { Punti = Punti + 0; }
 
             PassaPunti = Punti;

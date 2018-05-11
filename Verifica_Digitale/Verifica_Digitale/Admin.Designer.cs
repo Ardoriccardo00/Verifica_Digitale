@@ -99,6 +99,7 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Modifica le domande a completamento";
             this.label4.Visible = false;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Admin
             // 

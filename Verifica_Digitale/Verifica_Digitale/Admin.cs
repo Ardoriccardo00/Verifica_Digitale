@@ -52,5 +52,11 @@ namespace Verifica_Digitale
             ModificaCrocette mfc = new ModificaCrocette();
             mfc.Show();
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            ModificaCompletamento mfcc = new ModificaCompletamento();
+            mfcc.Show();
+        }
     }
 }

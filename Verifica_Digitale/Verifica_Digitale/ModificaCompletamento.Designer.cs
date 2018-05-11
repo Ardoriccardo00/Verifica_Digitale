@@ -56,6 +56,7 @@
             this.button1.TabIndex = 101;
             this.button1.Text = "Inserisci";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label15
             // 
@@ -73,7 +74,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 13);
             this.label11.TabIndex = 89;
-            this.label11.Text = "Risposta 1";
+            this.label11.Text = "Risposta 3";
             // 
             // Risposta14
             // 
@@ -105,7 +106,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(57, 13);
             this.label7.TabIndex = 78;
-            this.label7.Text = "Risposta 1";
+            this.label7.Text = "Risposta 2";
             // 
             // label6
             // 
@@ -183,7 +184,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(57, 13);
             this.label16.TabIndex = 94;
-            this.label16.Text = "Risposta 1";
+            this.label16.Text = "Risposta 4";
             // 
             // ModificaCompletamento
             // 

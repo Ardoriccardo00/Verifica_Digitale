@@ -59,29 +59,26 @@ namespace Verifica_Digitale
             + "Completamento: " + Convert.ToString(Completamento.PassaPunti) + ", "
             + "Totale: "
             + Totale;
-            if (Login.Studente == "Colombo")
-            {
-                StreamWriter File = new StreamWriter("C://Users/Riccardo/Desktop/Risultati.txt");
-                File.Write("Scelta multipla: " + SceltaMultipla.PassaPuntiMultipla + ",");
-                File.Write(" Crocette: " + Crocette.PassaPuntiCrocette + ",");
-                File.Write(" Completamento: " + Completamento.PassaPunti + ",");
-                File.Write(" Totale: " + Totale);
+        
+            
+                StreamWriter File = new StreamWriter(Login.Studente);
+                File.WriteLine("Scelta multipla: " + SceltaMultipla.PassaPuntiMultipla + ",");
+                File.WriteLine(" Crocette: " + Crocette.PassaPuntiCrocette + ",");
+                File.WriteLine(" Completamento: " + Completamento.PassaPunti + ",");
+                File.WriteLine(" Totale: " + Totale);
                 File.Close();
-            }
-            else
-            {
-                StreamWriter File = new StreamWriter("C://Users/Riccardo/Documents/Risultati.txt");
-                File.Write("Scelta multipla: " + SceltaMultipla.PassaPuntiMultipla + ",");
-                File.Write(" Crocette: " + Crocette.PassaPuntiCrocette + ",");
-                File.Write(" Completamento: " + Completamento.PassaPunti + ",");
-                File.Write(" Totale: " + Totale);
-                File.Close();
-
+            
+            
+           
             }
 
+        private void Attiva_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Attiva.Checked == true) { button4.Enabled = true; }
+            else { button4.Enabled = false; }
         }
     }
-}
+    }
 
 
 

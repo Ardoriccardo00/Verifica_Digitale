@@ -35,6 +35,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txtText = new System.Windows.Forms.TextBox();
+            this.Attiva = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -82,6 +83,7 @@
             // 
             // button4
             // 
+            this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(139, 262);
             this.button4.Name = "button4";
@@ -109,11 +111,23 @@
             this.txtText.TabIndex = 6;
             this.txtText.Visible = false;
             // 
+            // Attiva
+            // 
+            this.Attiva.AutoSize = true;
+            this.Attiva.Location = new System.Drawing.Point(18, 308);
+            this.Attiva.Name = "Attiva";
+            this.Attiva.Size = new System.Drawing.Size(96, 17);
+            this.Attiva.TabIndex = 7;
+            this.Attiva.Text = "Attiva pulsante";
+            this.Attiva.UseVisualStyleBackColor = true;
+            this.Attiva.CheckedChanged += new System.EventHandler(this.Attiva_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(444, 365);
+            this.Controls.Add(this.Attiva);
             this.Controls.Add(this.txtText);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
@@ -137,6 +151,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox txtText;
+        private System.Windows.Forms.CheckBox Attiva;
     }
 }
 

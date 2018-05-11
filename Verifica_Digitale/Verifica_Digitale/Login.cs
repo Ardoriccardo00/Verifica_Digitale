@@ -21,7 +21,7 @@ namespace Verifica_Digitale
         private void colomboToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 p = new Form1();
-            Studente = "Colombo";
+            Studente = "C://Users/Riccardo/Documents/Risultati.txt";
             p.Show();
             //this.Hide();
         }
@@ -31,7 +31,7 @@ namespace Verifica_Digitale
         private void altroToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 p = new Form1();
-            Studente = "Altro";
+            Studente = "C://Users/Riccardo/Desktop/Risultati.txt";
             p.Show();
             //this.Hide();
         }

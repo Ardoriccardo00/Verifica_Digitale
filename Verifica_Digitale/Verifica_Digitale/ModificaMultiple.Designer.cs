@@ -676,6 +676,8 @@
             this.Controls.Add(this.Domanda1);
             this.Name = "ModificaMultiple";
             this.Text = "ModificaMultiple";
+            this.Load += new System.EventHandler(this.ModificaMultiple_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ModificaMultiple_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

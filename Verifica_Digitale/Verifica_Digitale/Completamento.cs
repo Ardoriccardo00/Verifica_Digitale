@@ -68,5 +68,10 @@ namespace Verifica_Digitale
 
             this.KeyPreview = true;
         }
+
+        private void Completamento_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { button1.Focus(); button1.PerformClick(); }
+        }
     }
 }

@@ -211,6 +211,8 @@
             this.Controls.Add(this.Domanda1);
             this.Name = "ModificaCompletamento";
             this.Text = "ModificaCompletamento";
+            this.Load += new System.EventHandler(this.ModificaCompletamento_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ModificaCompletamento_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

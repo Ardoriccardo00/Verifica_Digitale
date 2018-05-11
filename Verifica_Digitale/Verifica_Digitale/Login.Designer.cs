@@ -65,21 +65,21 @@
             // colomboToolStripMenuItem
             // 
             this.colomboToolStripMenuItem.Name = "colomboToolStripMenuItem";
-            this.colomboToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.colomboToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.colomboToolStripMenuItem.Text = "Colombo";
             this.colomboToolStripMenuItem.Click += new System.EventHandler(this.colomboToolStripMenuItem_Click);
             // 
             // altroToolStripMenuItem
             // 
             this.altroToolStripMenuItem.Name = "altroToolStripMenuItem";
-            this.altroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altroToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
             this.altroToolStripMenuItem.Text = "Altro";
             this.altroToolStripMenuItem.Click += new System.EventHandler(this.altroToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 21);
             // 
             // insegnanteToolStripMenuItem
             // 
@@ -93,7 +93,7 @@
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -112,6 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(210, 251);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);

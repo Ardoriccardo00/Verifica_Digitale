@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -80,6 +81,47 @@ namespace Verifica_Digitale
             if (checkBox18.Checked == true) { Crocette.brisposta24 = true; }
             if (checkBox19.Checked == true) { Crocette.brisposta34 = true; }
             if (checkBox20.Checked == true) { Crocette.brisposta44 = true; }
+
+            StreamWriter File = new StreamWriter("C://Users/Riccardo/Documents/TestVerifica/Crocette.txt");
+            File.WriteLine(Domanda1.Text);
+            File.WriteLine(Risposta1.Text);
+            File.WriteLine(Risposta12.Text);
+            File.WriteLine(Risposta13.Text);
+            File.WriteLine(Risposta14.Text);
+            File.WriteLine(Domanda2.Text);
+            File.WriteLine(Risposta12.Text);
+            File.WriteLine(Risposta22.Text);
+            File.WriteLine(Risposta23.Text);
+            File.WriteLine(Risposta24.Text);
+            File.WriteLine(Domanda3.Text);
+            File.WriteLine(Risposta13.Text);
+            File.WriteLine(Risposta23.Text);
+            File.WriteLine(Risposta33.Text);
+            File.WriteLine(Risposta43.Text);
+            File.WriteLine(Domanda4.Text);
+            File.WriteLine(Risposta14.Text);
+            File.WriteLine(Risposta24.Text);
+            File.WriteLine(Risposta34.Text);
+            File.WriteLine(Risposta44.Text);
+
+            if (checkBox2.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox3.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox4.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox5.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox7.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox8.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox9.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox10.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox12.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox13.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox14.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox15.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox17.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox18.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox19.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+            if (checkBox20.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
+
+            File.Close();
         }
 
         private void ModificaCrocette_Load(object sender, EventArgs e)

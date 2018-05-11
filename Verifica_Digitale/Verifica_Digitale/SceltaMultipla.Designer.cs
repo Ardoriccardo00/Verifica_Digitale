@@ -315,6 +315,7 @@
             this.Name = "SceltaMultipla";
             this.Text = "SceltaMultipla";
             this.Load += new System.EventHandler(this.SceltaMultipla_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SceltaMultipla_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

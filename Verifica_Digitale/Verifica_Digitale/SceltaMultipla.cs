@@ -68,10 +68,7 @@ namespace Verifica_Digitale
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Punti1 = 0;
-            Punti2 = 0;
-            Punti3 = 0;
-            Punti4 = 0;
+
 
             if      (checkBox1.Checked == true)  { if (brisposta11 == true) Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
             if      (checkBox2.Checked == true) { if (brisposta21 == true) Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
@@ -98,6 +95,13 @@ namespace Verifica_Digitale
 
             MessageBox.Show(Convert.ToString(PuntiTotali), messaggio);
 
+            Punti1 = 0;
+            Punti2 = 0;
+            Punti3 = 0;
+            Punti4 = 0;
+
+            PuntiTotali = 0;
+
             //else if (checkBox1.Checked == false)  { Punti1 = Punti1 + 0; }
         }
 
@@ -108,21 +112,28 @@ namespace Verifica_Digitale
             Domanda3.Text = domanda3;
             Domanda4.Text = domanda4;
             checkBox1.Text = risposta11;
-            checkBox1.Text = risposta21;
-            checkBox1.Text = risposta31;
-            checkBox1.Text = risposta41;
-            checkBox1.Text = risposta12;
-            checkBox1.Text = risposta22;
-            checkBox1.Text = risposta32;
-            checkBox1.Text = risposta42;
-            checkBox1.Text = risposta13;
-            checkBox1.Text = risposta23;
-            checkBox1.Text = risposta33;
-            checkBox1.Text = risposta43;
-            checkBox1.Text = risposta14;
-            checkBox1.Text = risposta24; 
-            checkBox1.Text = risposta34;
-            checkBox1.Text = risposta44;
+            checkBox2.Text = risposta21;
+            checkBox3.Text = risposta31;
+            checkBox4.Text = risposta41;
+            checkBox5.Text = risposta12;
+            checkBox6.Text = risposta22;
+            checkBox7.Text = risposta32;
+            checkBox8.Text = risposta42;
+            checkBox9.Text = risposta13;
+            checkBox10.Text = risposta23;
+            checkBox11.Text = risposta33;
+            checkBox12.Text = risposta43;
+            checkBox13.Text = risposta14;
+            checkBox14.Text = risposta24;
+            checkBox15.Text = risposta34;
+            checkBox16.Text = risposta44;
+
+            this.KeyPreview = true;
+        }
+
+        private void SceltaMultipla_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { button1.Focus(); button1.PerformClick(); }
         }
     }
 }

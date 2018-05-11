@@ -87,6 +87,7 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Modifica le risposte a crocette";
             this.label3.Visible = false;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 

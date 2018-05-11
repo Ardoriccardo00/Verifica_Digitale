@@ -431,6 +431,7 @@
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 41;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.Visible = false;
             // 
             // checkBox2
             // 
@@ -476,6 +477,7 @@
             this.checkBox6.Size = new System.Drawing.Size(15, 14);
             this.checkBox6.TabIndex = 46;
             this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox6.Visible = false;
             // 
             // checkBox7
             // 
@@ -521,6 +523,7 @@
             this.checkBox11.Size = new System.Drawing.Size(15, 14);
             this.checkBox11.TabIndex = 51;
             this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBox11.Visible = false;
             // 
             // checkBox12
             // 
@@ -566,6 +569,7 @@
             this.checkBox16.Size = new System.Drawing.Size(15, 14);
             this.checkBox16.TabIndex = 56;
             this.checkBox16.UseVisualStyleBackColor = true;
+            this.checkBox16.Visible = false;
             // 
             // checkBox17
             // 

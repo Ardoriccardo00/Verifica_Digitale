@@ -70,29 +70,30 @@ namespace Verifica_Digitale
             SceltaMultipla.risposta34 = Risposta34.Text;
             SceltaMultipla.risposta44 = Risposta44.Text;
 
-            if (checkBox1.Checked == true)  { SceltaMultipla.bdomanda1 = true; }
-            if (checkBox6.Checked == true)  { SceltaMultipla.bdomanda2 = true; }
-            if (checkBox11.Checked == true) { SceltaMultipla.bdomanda3 = true; }
-            if (checkBox16.Checked == true) { SceltaMultipla.bdomanda4 = true; }
-            if (checkBox2.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox3.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox4.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox5.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox7.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox8.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox9.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox10.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox12.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox13.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox14.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox15.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox17.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox18.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox19.Checked == true) { SceltaMultipla.brisposta11 = true; }
-            if (checkBox20.Checked == true) { SceltaMultipla.brisposta11 = true; }
+
+
+            if (checkBox2.Checked == true) { SceltaMultipla.brisposta11 = true; } 
+            if (checkBox3.Checked == true) { SceltaMultipla.brisposta21 = true; }
+            if (checkBox4.Checked == true) { SceltaMultipla.brisposta31 = true; }
+            if (checkBox5.Checked == true) { SceltaMultipla.brisposta41 = true; }
+            if (checkBox7.Checked == true) { SceltaMultipla.brisposta12 = true; }
+            if (checkBox8.Checked == true) { SceltaMultipla.brisposta22 = true; }
+            if (checkBox9.Checked == true) { SceltaMultipla.brisposta32 = true; }
+            if (checkBox10.Checked == true) { SceltaMultipla.brisposta42 = true; }
+            if (checkBox12.Checked == true) { SceltaMultipla.brisposta13 = true; }
+            if (checkBox13.Checked == true) { SceltaMultipla.brisposta23 = true; }
+            if (checkBox14.Checked == true) { SceltaMultipla.brisposta33 = true; }
+            if (checkBox15.Checked == true) { SceltaMultipla.brisposta43 = true; }
+            if (checkBox17.Checked == true) { SceltaMultipla.brisposta14 = true; }
+            if (checkBox18.Checked == true) { SceltaMultipla.brisposta24 = true; }
+            if (checkBox19.Checked == true) { SceltaMultipla.brisposta34 = true; }
+            if (checkBox20.Checked == true) { SceltaMultipla.brisposta44 = true; }
+
+            
         }
     }
 }
+
 
 //domanda1 = Domanda1.Text;
 //domanda2 = Domanda2.Text;
@@ -135,3 +136,8 @@ namespace Verifica_Digitale
 //public static string risposta24;
 //public static string risposta34;
 //public static string risposta44;
+
+//if (checkBox1.Checked == true)  { SceltaMultipla.bdomanda1 = true; }
+//if (checkBox6.Checked == true)  { SceltaMultipla.bdomanda2 = true; }
+//if (checkBox11.Checked == true) { SceltaMultipla.bdomanda3 = true; }
+//if (checkBox16.Checked == true) { SceltaMultipla.bdomanda4 = true; }

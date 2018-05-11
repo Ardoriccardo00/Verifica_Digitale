@@ -46,5 +46,11 @@ namespace Verifica_Digitale
             ModificaMultiple mfm = new ModificaMultiple();
             mfm.Show();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            ModificaCrocette mfc = new ModificaCrocette();
+            mfc.Show();
+        }
     }
 }

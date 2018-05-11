@@ -80,9 +80,8 @@
             this.checkBox16.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox16.Location = new System.Drawing.Point(1060, 214);
             this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(81, 28);
+            this.checkBox16.Size = new System.Drawing.Size(15, 14);
             this.checkBox16.TabIndex = 42;
-            this.checkBox16.Text = "giusta";
             this.checkBox16.UseVisualStyleBackColor = true;
             // 
             // checkBox15
@@ -91,9 +90,8 @@
             this.checkBox15.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox15.Location = new System.Drawing.Point(918, 214);
             this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(51, 28);
+            this.checkBox15.Size = new System.Drawing.Size(15, 14);
             this.checkBox15.TabIndex = 41;
-            this.checkBox15.Text = "no";
             this.checkBox15.UseVisualStyleBackColor = true;
             // 
             // checkBox14
@@ -102,9 +100,8 @@
             this.checkBox14.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox14.Location = new System.Drawing.Point(776, 214);
             this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(136, 28);
+            this.checkBox14.Size = new System.Drawing.Size(15, 14);
             this.checkBox14.TabIndex = 40;
-            this.checkBox14.Text = "checkBox14";
             this.checkBox14.UseVisualStyleBackColor = true;
             // 
             // checkBox13
@@ -113,9 +110,8 @@
             this.checkBox13.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox13.Location = new System.Drawing.Point(634, 214);
             this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(51, 28);
+            this.checkBox13.Size = new System.Drawing.Size(15, 14);
             this.checkBox13.TabIndex = 39;
-            this.checkBox13.Text = "no";
             this.checkBox13.UseVisualStyleBackColor = true;
             // 
             // checkBox12
@@ -124,9 +120,8 @@
             this.checkBox12.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox12.Location = new System.Drawing.Point(1049, 62);
             this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(136, 28);
+            this.checkBox12.Size = new System.Drawing.Size(15, 14);
             this.checkBox12.TabIndex = 38;
-            this.checkBox12.Text = "checkBox12";
             this.checkBox12.UseVisualStyleBackColor = true;
             // 
             // checkBox11
@@ -135,9 +130,8 @@
             this.checkBox11.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox11.Location = new System.Drawing.Point(907, 62);
             this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(83, 28);
+            this.checkBox11.Size = new System.Drawing.Size(15, 14);
             this.checkBox11.TabIndex = 37;
-            this.checkBox11.Text = "Giusta";
             this.checkBox11.UseVisualStyleBackColor = true;
             // 
             // checkBox10
@@ -146,9 +140,8 @@
             this.checkBox10.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox10.Location = new System.Drawing.Point(765, 62);
             this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(136, 28);
+            this.checkBox10.Size = new System.Drawing.Size(15, 14);
             this.checkBox10.TabIndex = 36;
-            this.checkBox10.Text = "checkBox10";
             this.checkBox10.UseVisualStyleBackColor = true;
             // 
             // checkBox9
@@ -157,9 +150,8 @@
             this.checkBox9.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox9.Location = new System.Drawing.Point(634, 62);
             this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(51, 28);
+            this.checkBox9.Size = new System.Drawing.Size(15, 14);
             this.checkBox9.TabIndex = 35;
-            this.checkBox9.Text = "no";
             this.checkBox9.UseVisualStyleBackColor = true;
             // 
             // checkBox8
@@ -168,9 +160,8 @@
             this.checkBox8.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox8.Location = new System.Drawing.Point(410, 214);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(125, 28);
+            this.checkBox8.Size = new System.Drawing.Size(15, 14);
             this.checkBox8.TabIndex = 34;
-            this.checkBox8.Text = "checkBox8";
             this.checkBox8.UseVisualStyleBackColor = true;
             // 
             // checkBox7
@@ -179,9 +170,8 @@
             this.checkBox7.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox7.Location = new System.Drawing.Point(279, 214);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(51, 28);
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
             this.checkBox7.TabIndex = 33;
-            this.checkBox7.Text = "no";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
             // checkBox6
@@ -190,9 +180,8 @@
             this.checkBox6.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox6.Location = new System.Drawing.Point(148, 214);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(81, 28);
+            this.checkBox6.Size = new System.Drawing.Size(15, 14);
             this.checkBox6.TabIndex = 32;
-            this.checkBox6.Text = "giusta";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // checkBox5
@@ -201,9 +190,8 @@
             this.checkBox5.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox5.Location = new System.Drawing.Point(17, 214);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(51, 28);
+            this.checkBox5.Size = new System.Drawing.Size(15, 14);
             this.checkBox5.TabIndex = 31;
-            this.checkBox5.Text = "no";
             this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // label4
@@ -242,9 +230,8 @@
             this.checkBox4.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox4.Location = new System.Drawing.Point(410, 62);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(125, 28);
+            this.checkBox4.Size = new System.Drawing.Size(15, 14);
             this.checkBox4.TabIndex = 27;
-            this.checkBox4.Text = "checkBox4";
             this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -253,9 +240,8 @@
             this.checkBox3.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox3.Location = new System.Drawing.Point(279, 62);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(51, 28);
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 26;
-            this.checkBox3.Text = "no";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -264,9 +250,8 @@
             this.checkBox2.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(148, 62);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(125, 28);
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 25;
-            this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -275,9 +260,8 @@
             this.checkBox1.Font = new System.Drawing.Font("Ubuntu", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(17, 62);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(83, 28);
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 24;
-            this.checkBox1.Text = "Giusta";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label1
@@ -330,6 +314,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Crocette";
             this.Text = "Crocette";
+            this.Load += new System.EventHandler(this.Crocette_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Crocette_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

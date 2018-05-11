@@ -12,7 +12,7 @@ namespace Verifica_Digitale
 {
     public partial class Admin : Form
     {
-        string Password = ""; //LoveMuffin367
+        string Password = "LoveMuffin367"; 
         public Admin()
         {
             InitializeComponent();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -36,6 +37,10 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.txtText = new System.Windows.Forms.TextBox();
             this.Attiva = new System.Windows.Forms.CheckBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.Progresso = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -114,6 +119,7 @@
             // Attiva
             // 
             this.Attiva.AutoSize = true;
+            this.Attiva.Enabled = false;
             this.Attiva.Location = new System.Drawing.Point(18, 308);
             this.Attiva.Name = "Attiva";
             this.Attiva.Size = new System.Drawing.Size(96, 17);
@@ -122,11 +128,35 @@
             this.Attiva.UseVisualStyleBackColor = true;
             this.Attiva.CheckedChanged += new System.EventHandler(this.Attiva_CheckedChanged);
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(11, 222);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(103, 45);
+            this.trackBar1.TabIndex = 8;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.trackBar1.ValueChanged += new System.EventHandler(this.trackBar1_ValueChanged);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(139, 229);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(139, 23);
+            this.progressBar1.TabIndex = 9;
+            this.progressBar1.Visible = false;
+            // 
+            // Progresso
+            // 
+            this.Progresso.Interval = 10;
+            this.Progresso.Tick += new System.EventHandler(this.Progresso_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 365);
+            this.ClientSize = new System.Drawing.Size(448, 365);
+            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.Attiva);
             this.Controls.Add(this.txtText);
             this.Controls.Add(this.listBox1);
@@ -137,6 +167,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,6 +184,9 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox txtText;
         private System.Windows.Forms.CheckBox Attiva;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer Progresso;
     }
 }
 

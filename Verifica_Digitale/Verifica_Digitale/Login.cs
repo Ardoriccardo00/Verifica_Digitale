@@ -21,7 +21,7 @@ namespace Verifica_Digitale
         private void colomboToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form1 p = new Form1();
-            Studente = "C://Users/Riccardo/Documents/Risultati.txt";
+            Studente = "C://Users/Riccardo/Documents/TestVerifica/Risultati.txt";
             p.Show();
             //this.Hide();
         }

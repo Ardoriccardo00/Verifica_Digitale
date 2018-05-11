@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,11 @@ namespace Verifica_Digitale
 {
     public partial class Crocette : Form
     {
+
+        string[] Ldomande = new string[4];
+        string[] Lrisposte = new string[16];
+        string[] Lvero = new string[16];
+
         public static string domanda1;
         public static string domanda2;
         public static string domanda3;
@@ -74,25 +80,25 @@ namespace Verifica_Digitale
             Punti3 = 0;
             Punti4 = 0;
 
-            if (checkBox1.Checked == true) { if (brisposta11 == true) Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
-            if (checkBox2.Checked == true) { if (brisposta21 == true) Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
-            if (checkBox3.Checked == true) { if (brisposta31 == true) Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
-            if (checkBox4.Checked == true) { if (brisposta41 == true) Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
+            if (checkBox1.Checked == true) { if (Lvero[0] == "s") Punti1 = Punti1 + 1; else if (Lvero[0] == "n") { Punti1 = Punti1 + 0; } }
+            if (checkBox2.Checked == true) { if (Lvero[1] == "s") Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
+            if (checkBox3.Checked == true) { if (Lvero[2] == "s") Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
+            if (checkBox4.Checked == true) { if (Lvero[3] == "s") Punti1 = Punti1 + 1; else { Punti1 = Punti1 + 0; } }
 
-            if (checkBox5.Checked == true) { if (brisposta12 == true) Punti2 = Punti2 + 1; else { Punti2 = Punti2 + 0; } }
-            if (checkBox6.Checked == true) { if (brisposta22 == true) Punti2 = Punti2 + 1; else { Punti2 = Punti2 + 0; } }
-            if (checkBox7.Checked == true) { if (brisposta32 == true) Punti2 = Punti2 + 1; else { Punti2 = Punti2 + 0; } }
-            if (checkBox8.Checked == true) { if (brisposta42 == true) Punti2 = Punti2 + 1; else { Punti2 = Punti2 + 0; } }
+            if (checkBox5.Checked == true) { if (Lvero[4] == "s") Punti2 = Punti2 + 1; else { Punti2 = Punti2 + 0; } }
+            if (checkBox6.Checked == true) { if (Lvero[5] == "s") Punti2 = Punti2 + 1; else { Punti2 = Punti2 + 0; } }
+            if (checkBox7.Checked == true) { if (Lvero[6] == "s") Punti2 = Punti2 + 1; else { Punti2 = Punti2 + 0; } }
+            if (checkBox8.Checked == true) { if (Lvero[7] == "s") Punti2 = Punti2 + 1; else { Punti2 = Punti2 + 0; } }
 
-            if (checkBox9.Checked == true) { if (brisposta13 == true) Punti3 = Punti3 + 1; else { Punti3 = Punti3 + 0; } }
-            if (checkBox10.Checked == true) { if (brisposta23 == true) Punti3 = Punti3 + 1; else { Punti3 = Punti3 + 0; } }
-            if (checkBox11.Checked == true) { if (brisposta33 == true) Punti3 = Punti3 + 1; else { Punti3 = Punti3 + 0; } }
-            if (checkBox12.Checked == true) { if (brisposta43 == true) Punti3 = Punti3 + 1; else { Punti3 = Punti3 + 0; } }
+            if (checkBox9.Checked == true) { if (Lvero[8] == "s") Punti3 = Punti3 + 1; else { Punti3 = Punti3 + 0; } }
+            if (checkBox10.Checked == true) { if (Lvero[9] == "s") Punti3 = Punti3 + 1; else { Punti3 = Punti3 + 0; } }
+            if (checkBox11.Checked == true) { if (Lvero[10] == "s") Punti3 = Punti3 + 1; else { Punti3 = Punti3 + 0; } }
+            if (checkBox12.Checked == true) { if (Lvero[11] == "s") Punti3 = Punti3 + 1; else { Punti3 = Punti3 + 0; } }
 
-            if (checkBox13.Checked == true) { if (brisposta14 == true) Punti4 = Punti4 + 1; else { Punti4 = Punti4 + 0; } }
-            if (checkBox14.Checked == true) { if (brisposta24 == true) Punti4 = Punti4 + 1; else { Punti4 = Punti4 + 0; } }
-            if (checkBox15.Checked == true) { if (brisposta34 == true) Punti4 = Punti4 + 1; else { Punti4 = Punti4 + 0; } }
-            if (checkBox16.Checked == true) { if (brisposta44 == true) Punti4 = Punti4 + 1; else { Punti4 = Punti4 + 0; } }
+            if (checkBox13.Checked == true) { if (Lvero[12] == "s") Punti4 = Punti4 + 1; else { Punti4 = Punti4 + 0; } }
+            if (checkBox14.Checked == true) { if (Lvero[13] == "s") Punti4 = Punti4 + 1; else { Punti4 = Punti4 + 0; } }
+            if (checkBox15.Checked == true) { if (Lvero[14] == "s") Punti4 = Punti4 + 1; else { Punti4 = Punti4 + 0; } }
+            if (checkBox16.Checked == true) { if (Lvero[15] == "s") Punti4 = Punti4 + 1; else { Punti4 = Punti4 + 0; } }
 
             PuntiTotali = Punti1 + Punti2 + Punti3 + Punti4;
             PassaPuntiCrocette = PuntiTotali;
@@ -102,26 +108,50 @@ namespace Verifica_Digitale
 
         private void Crocette_Load(object sender, EventArgs e)
         {
-            label1.Text = domanda1;
-            label2.Text = domanda2;
-            label3.Text = domanda3;
-            label4.Text = domanda4;
-            checkBox1.Text = risposta11;
-            checkBox2.Text = risposta21;
-            checkBox3.Text = risposta31;
-            checkBox4.Text = risposta41;
-            checkBox5.Text = risposta12;
-            checkBox6.Text = risposta22;
-            checkBox7.Text = risposta32;
-            checkBox8.Text = risposta42;
-            checkBox9.Text = risposta13;
-            checkBox10.Text = risposta23;
-            checkBox11.Text = risposta33;
-            checkBox12.Text = risposta43;
-            checkBox13.Text = risposta14;
-            checkBox14.Text = risposta24;
-            checkBox15.Text = risposta34;
-            checkBox16.Text = risposta44;
+            StreamReader SR = new StreamReader("C://Users/Riccardo/Documents/TestVerifica/Crocette.txt");
+            for (int i = 0; i < 4; i++)
+            {
+
+                Ldomande[i] = SR.ReadLine();
+
+            }
+
+            for (int i = 0; i < 16; i++)
+            {
+
+                Lrisposte[i] = SR.ReadLine();
+
+            }
+
+            for (int i = 0; i < 16; i++)
+            {
+
+                Lvero[i] = SR.ReadLine();
+
+            }
+
+            SR.Close();
+
+            label1.Text = Ldomande[0];
+            label2.Text = Ldomande[1];
+            label3.Text = Ldomande[2];
+            label4.Text = Ldomande[3];
+            checkBox1.Text = Lrisposte[0];
+            checkBox2.Text = Lrisposte[1];
+            checkBox3.Text = Lrisposte[2];
+            checkBox4.Text = Lrisposte[3];
+            checkBox5.Text = Lrisposte[4];
+            checkBox6.Text = Lrisposte[5];
+            checkBox7.Text = Lrisposte[6];
+            checkBox8.Text = Lrisposte[7];
+            checkBox9.Text = Lrisposte[8];
+            checkBox10.Text = Lrisposte[9];
+            checkBox11.Text = Lrisposte[10];
+            checkBox12.Text = Lrisposte[11];
+            checkBox13.Text = Lrisposte[12];
+            checkBox14.Text = Lrisposte[13];
+            checkBox15.Text = Lrisposte[14];
+            checkBox16.Text = Lrisposte[15];
 
             this.KeyPreview = true;
         }

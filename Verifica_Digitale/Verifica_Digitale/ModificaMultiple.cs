@@ -92,25 +92,25 @@ namespace Verifica_Digitale
 
             StreamWriter File = new StreamWriter("C://Users/Riccardo/Documents/TestVerifica/Multiple.txt");
             File.WriteLine(Domanda1.Text);
-            File.WriteLine(Risposta1.Text);
-            File.WriteLine(Risposta12.Text);
-            File.WriteLine(Risposta13.Text);
-            File.WriteLine(Risposta14.Text);
             File.WriteLine(Domanda2.Text);
-            File.WriteLine(Risposta12.Text);
-            File.WriteLine(Risposta22.Text);
-            File.WriteLine(Risposta23.Text);
-            File.WriteLine(Risposta24.Text);
             File.WriteLine(Domanda3.Text);
-            File.WriteLine(Risposta13.Text);
-            File.WriteLine(Risposta23.Text);
-            File.WriteLine(Risposta33.Text);
-            File.WriteLine(Risposta43.Text);
             File.WriteLine(Domanda4.Text);
-            File.WriteLine(Risposta14.Text);
-            File.WriteLine(Risposta24.Text);
-            File.WriteLine(Risposta34.Text);
-            File.WriteLine(Risposta44.Text);
+            File.WriteLine(Risposta1);
+            File.WriteLine(Risposta12);
+            File.WriteLine(Risposta13);
+            File.WriteLine(Risposta14);
+            File.WriteLine(Risposta12);
+            File.WriteLine(Risposta22);
+            File.WriteLine(Risposta32);
+            File.WriteLine(Risposta42);
+            File.WriteLine(Risposta13);
+            File.WriteLine(Risposta23);
+            File.WriteLine(Risposta33);
+            File.WriteLine(Risposta43);
+            File.WriteLine(Risposta14);
+            File.WriteLine(Risposta24);
+            File.WriteLine(Risposta34);
+            File.WriteLine(Risposta44);
 
             if (checkBox2.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
             if (checkBox3.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }

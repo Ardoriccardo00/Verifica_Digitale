@@ -41,14 +41,15 @@ namespace Verifica_Digitale
             Completamento.risposta4 = Risposta14.Text;
 
             StreamWriter File = new StreamWriter("C://Users/Riccardo/Documents/TestVerifica/Completamento.txt");
-            File.WriteLine(Domanda1.Text);
-            File.WriteLine(Risposta1.Text);
-            File.WriteLine(Domanda2.Text);
-            File.WriteLine(Risposta12.Text);
-            File.WriteLine(Domanda3.Text);
-            File.WriteLine(Risposta13.Text);
+            File.WriteLine(Domanda1.Text);         
+            File.WriteLine(Domanda2.Text);            
+            File.WriteLine(Domanda3.Text);        
             File.WriteLine(Domanda4.Text);
+            File.WriteLine(Risposta1.Text);
+            File.WriteLine(Risposta12.Text);
+            File.WriteLine(Risposta13.Text);
             File.WriteLine(Risposta14.Text);
+
 
 
             File.Close();

@@ -84,25 +84,26 @@ namespace Verifica_Digitale
 
             StreamWriter File = new StreamWriter("C://Users/Riccardo/Documents/TestVerifica/Crocette.txt");
             File.WriteLine(Domanda1.Text);
-            File.WriteLine(Risposta1.Text);
-            File.WriteLine(Risposta12.Text);
-            File.WriteLine(Risposta13.Text);
-            File.WriteLine(Risposta14.Text);
             File.WriteLine(Domanda2.Text);
+            File.WriteLine(Domanda3.Text);
+            File.WriteLine(Domanda4.Text);
+            File.WriteLine(Risposta1.Text);
+            File.WriteLine(Risposta2.Text);
+            File.WriteLine(Risposta3.Text);
+            File.WriteLine(Risposta4.Text);
             File.WriteLine(Risposta12.Text);
             File.WriteLine(Risposta22.Text);
-            File.WriteLine(Risposta23.Text);
-            File.WriteLine(Risposta24.Text);
-            File.WriteLine(Domanda3.Text);
+            File.WriteLine(Risposta32.Text);
+            File.WriteLine(Risposta42.Text);
             File.WriteLine(Risposta13.Text);
             File.WriteLine(Risposta23.Text);
             File.WriteLine(Risposta33.Text);
             File.WriteLine(Risposta43.Text);
-            File.WriteLine(Domanda4.Text);
             File.WriteLine(Risposta14.Text);
             File.WriteLine(Risposta24.Text);
             File.WriteLine(Risposta34.Text);
             File.WriteLine(Risposta44.Text);
+
 
             if (checkBox2.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }
             if (checkBox3.Checked == true) { File.WriteLine("s"); } else { File.WriteLine("n"); }

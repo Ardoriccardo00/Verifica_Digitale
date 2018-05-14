@@ -13,17 +13,23 @@ namespace Verifica_Digitale
     public partial class Login : Form
     {
         public static string Studente;
+        string stud;
+        string password;
         public Login()
         {
             InitializeComponent();
+            Password.PasswordChar = '*';
         }
 
         private void colomboToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 p = new Form1();
             Studente = "C://Users/Riccardo/Documents/TestVerifica/Risultati.txt";
-            p.Show();
-            //this.Hide();
+            stud = "Colombo";
+            password = "SteamedHamsForWhat";
+
+            Accesso.Visible = true;
+            Password.Visible = true;
+
         }
 
 
@@ -33,7 +39,7 @@ namespace Verifica_Digitale
             Form1 p = new Form1();
             Studente = "C://Users/Riccardo/Desktop/Risultati.txt";
             p.Show();
-            //this.Hide();
+            
         }
 
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
@@ -59,5 +65,15 @@ namespace Verifica_Digitale
         {
 
         }
+
+        private void Accesso_Click(object sender, EventArgs e)
+        {
+            if (stud == "Colombo")
+            {
+                if (Password.Text == password) { MessageBox.Show("Benvenuto"); Form1 p = new Form1(); p.Show(); this.Hide(); }
+                else { MessageBox.Show("Dati Errati"); }
+            }
+            }
+        }
     }
-}
+

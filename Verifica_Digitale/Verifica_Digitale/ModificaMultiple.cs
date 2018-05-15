@@ -104,7 +104,7 @@ namespace Verifica_Digitale
             File.WriteLine(Risposta32);
             File.WriteLine(Risposta42);
             File.WriteLine(Risposta13);
-            File.WriteLine(Risposta23);
+            File.WriteLine(Risposta23); 
             File.WriteLine(Risposta33);
             File.WriteLine(Risposta43);
             File.WriteLine(Risposta14);

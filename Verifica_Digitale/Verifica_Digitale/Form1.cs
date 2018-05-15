@@ -105,6 +105,9 @@ namespace Verifica_Digitale
 
 
                 StreamWriter File = new StreamWriter(Login.Studente);
+                File.WriteLine("Verifica: " + Nome_e_descrizione.NomeVerifica);
+                File.WriteLine("Descrizione: " + Nome_e_descrizione.DescrizioneVerifica);
+                File.WriteLine(" ");
                 File.WriteLine("Scelta multipla: " + SceltaMultipla.PassaPuntiMultipla + ",");
                 File.WriteLine(" Crocette: " + Crocette.PassaPuntiCrocette + ",");
                 File.WriteLine(" Completamento: " + Completamento.PassaPunti + ",");

@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Accesso = new System.Windows.Forms.Button();
             this.Password = new System.Windows.Forms.TextBox();
+            this.colomboToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +50,7 @@
             this.insegnanteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(210, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(210, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -57,62 +58,63 @@
             // 
             this.selezionaUnoStudenteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.colomboToolStripMenuItem,
-            this.altroToolStripMenuItem});
-            this.selezionaUnoStudenteToolStripMenuItem.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.altroToolStripMenuItem,
+            this.colomboToolStripMenuItem1});
+            this.selezionaUnoStudenteToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.selezionaUnoStudenteToolStripMenuItem.Name = "selezionaUnoStudenteToolStripMenuItem";
-            this.selezionaUnoStudenteToolStripMenuItem.Size = new System.Drawing.Size(77, 21);
+            this.selezionaUnoStudenteToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.selezionaUnoStudenteToolStripMenuItem.Text = "Studente";
             this.selezionaUnoStudenteToolStripMenuItem.Click += new System.EventHandler(this.selezionaUnoStudenteToolStripMenuItem_Click);
             // 
             // colomboToolStripMenuItem
             // 
             this.colomboToolStripMenuItem.Name = "colomboToolStripMenuItem";
-            this.colomboToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
-            this.colomboToolStripMenuItem.Text = "Colombo";
+            this.colomboToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.colomboToolStripMenuItem.Text = "Colombo Test";
             this.colomboToolStripMenuItem.Click += new System.EventHandler(this.colomboToolStripMenuItem_Click);
             // 
             // altroToolStripMenuItem
             // 
             this.altroToolStripMenuItem.Name = "altroToolStripMenuItem";
-            this.altroToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.altroToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.altroToolStripMenuItem.Text = "Altro";
             this.altroToolStripMenuItem.Click += new System.EventHandler(this.altroToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 21);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 20);
             // 
             // insegnanteToolStripMenuItem
             // 
             this.insegnanteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem});
-            this.insegnanteToolStripMenuItem.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.insegnanteToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.insegnanteToolStripMenuItem.Name = "insegnanteToolStripMenuItem";
-            this.insegnanteToolStripMenuItem.Size = new System.Drawing.Size(87, 21);
+            this.insegnanteToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
             this.insegnanteToolStripMenuItem.Text = "Insegnante";
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Ubuntu", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(12, 209);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 33);
+            this.label1.Size = new System.Drawing.Size(193, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Accedi come...";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Accesso
             // 
-            this.Accesso.Font = new System.Drawing.Font("Ubuntu", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Accesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Accesso.Location = new System.Drawing.Point(56, 120);
             this.Accesso.Name = "Accesso";
             this.Accesso.Size = new System.Drawing.Size(85, 54);
@@ -130,6 +132,13 @@
             this.Password.TabIndex = 4;
             this.Password.Visible = false;
             // 
+            // colomboToolStripMenuItem1
+            // 
+            this.colomboToolStripMenuItem1.Name = "colomboToolStripMenuItem1";
+            this.colomboToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.colomboToolStripMenuItem1.Text = "Colombo";
+            this.colomboToolStripMenuItem1.Click += new System.EventHandler(this.colomboToolStripMenuItem1_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,6 +152,8 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Login_KeyDown);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -162,5 +173,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button Accesso;
         private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.ToolStripMenuItem colomboToolStripMenuItem1;
     }
 }

@@ -74,6 +74,27 @@ namespace Verifica_Digitale
                 else { MessageBox.Show("Dati Errati"); }
             }
             }
+
+        private void colomboToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Studente = "S:/4B06/Risultati Colombo.txt";
+            stud = "Colombo";
+            password = "test";
+
+            Accesso.Visible = true;
+            Password.Visible = true;
+            Password.Focus();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.KeyPreview = true;
+        }
+
+        private void Login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { Accesso.Focus(); Accesso.PerformClick(); }
+        }
+    }
     }
 

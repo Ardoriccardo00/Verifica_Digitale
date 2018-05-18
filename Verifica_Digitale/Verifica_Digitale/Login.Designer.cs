@@ -32,13 +32,13 @@
             this.selezionaUnoStudenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colomboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colomboToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.insegnanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
             this.Accesso = new System.Windows.Forms.Button();
             this.Password = new System.Windows.Forms.TextBox();
-            this.colomboToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,6 +80,13 @@
             this.altroToolStripMenuItem.Text = "Altro";
             this.altroToolStripMenuItem.Click += new System.EventHandler(this.altroToolStripMenuItem_Click);
             // 
+            // colomboToolStripMenuItem1
+            // 
+            this.colomboToolStripMenuItem1.Name = "colomboToolStripMenuItem1";
+            this.colomboToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.colomboToolStripMenuItem1.Text = "Colombo";
+            this.colomboToolStripMenuItem1.Click += new System.EventHandler(this.colomboToolStripMenuItem1_Click);
+            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -97,7 +104,7 @@
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(114, 22);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -131,13 +138,6 @@
             this.Password.Size = new System.Drawing.Size(186, 20);
             this.Password.TabIndex = 4;
             this.Password.Visible = false;
-            // 
-            // colomboToolStripMenuItem1
-            // 
-            this.colomboToolStripMenuItem1.Name = "colomboToolStripMenuItem1";
-            this.colomboToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
-            this.colomboToolStripMenuItem1.Text = "Colombo";
-            this.colomboToolStripMenuItem1.Click += new System.EventHandler(this.colomboToolStripMenuItem1_Click);
             // 
             // Login
             // 

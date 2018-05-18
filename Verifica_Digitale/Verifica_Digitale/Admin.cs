@@ -29,6 +29,7 @@ namespace Verifica_Digitale
                 label3.Visible = true;
                 label4.Visible = true;
                 label5.Visible = true;
+                label6.Visible = true;
             }
             else { MessageBox.Show("Dati inseriti errati."); }
         }
@@ -70,6 +71,12 @@ namespace Verifica_Digitale
         {
             Nome_e_descrizione ned = new Nome_e_descrizione();
             ned.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            ClasseCreaMultiple ccm = new ClasseCreaMultiple();
+            ccm.Show();
         }
     }
 }

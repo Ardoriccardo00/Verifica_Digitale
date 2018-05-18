@@ -37,7 +37,7 @@ namespace Verifica_Digitale
         private void Admin_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) { button1.Focus();  button1.PerformClick(); }
-        } //modifica  aaaaaa
+        } //modifica  aaaaaaa
 
         private void Admin_Load(object sender, EventArgs e)
         {

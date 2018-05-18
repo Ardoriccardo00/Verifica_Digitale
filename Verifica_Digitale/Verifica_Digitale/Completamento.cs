@@ -36,7 +36,7 @@ namespace Verifica_Digitale
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {//0
             Punti = 0;
 
                  if (testo1.Text == Lrisposte[0]) { Punti = Punti + 1; }
